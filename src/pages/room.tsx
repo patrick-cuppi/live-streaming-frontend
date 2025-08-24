@@ -1,4 +1,5 @@
 import { QuestionForm } from '@/components/question-form'
+import { QuestionList } from '@/components/question-list'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, Radio } from 'lucide-react'
 import { Link, Navigate, useParams } from 'react-router-dom'
@@ -44,7 +45,7 @@ export function Room() {
           <QuestionForm roomId={params.roomId} />
         </div>
 
-        {/* <QuestionList roomId={params.roomId} /> */}
+        <QuestionList roomId={params.roomId} />
       </div>
     </div>
   )
